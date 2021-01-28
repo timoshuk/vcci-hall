@@ -357,6 +357,12 @@ template {
   font-size: 22px;
 }
 
+@media all and (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
 *,
 ::before,
 ::after {

@@ -12,8 +12,21 @@
 }
 
 .main_content h1 {
-  margin-top: 20%;
+  margin-top: 100px;
   font-size: 3.2rem;
   font-weight: 700;
   color: aliceblue;
+}
+
+@media all and (min-width: 768px) {
+  .main_content h1 {
+    margin-top: 200px;
+  }
+}
+
+/* Btl style */
+
+.btn_tel {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
