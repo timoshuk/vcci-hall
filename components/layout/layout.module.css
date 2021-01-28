@@ -1,0 +1,13 @@
+.nav {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 160;
+}
+
+@media all and (min-width: 768px) {
+  .nav {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

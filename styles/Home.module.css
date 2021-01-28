@@ -1,0 +1,19 @@
+.main_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 150;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main_content h1 {
+  margin-top: 20%;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: aliceblue;
+}

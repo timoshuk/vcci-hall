@@ -1,17 +1,23 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Layout from "../components/layout";
+import Image from 'next/image'
+
+import styles from "../styles/Home.module.css"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Оренда залу</title>
-        <link rel="icon" href="/images/cropped-BoockmaskLogo-32x32.png" />
-      </Head>
+    <Layout head="Оренда конференц-залу">
 
-      <main>
-        <h1>Orenda Zall</h1>
-      </main>
-    </div>
+
+      <div className={styles.main_content}>
+        <h1 >Орендувати</h1>
+        <h3>конференц-зал у м.Луцьк</h3>
+      </div>
+      <Image
+        src="/images/main_bg.jpg"
+        alt="Picture of the author"
+        layout="fill"
+      />
+
+    </Layout>
   );
 }
