@@ -374,7 +374,6 @@ body {
 }
 .navbar-nav {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
   box-shadow: 0 0 5px #000;
   text-align: center;
 }
@@ -383,4 +382,5 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 1.2em;
+  padding: 15px 30px;
 }
