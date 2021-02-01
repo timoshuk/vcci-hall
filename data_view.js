@@ -1,6 +1,6 @@
 export const hall_data = [
   {
-    pageName: "Boradroom",
+    name: "Boradroom",
     imageLink: "/images/variants/boradroom/main_photo.JPG",
     headerText: "Фото розстановки залу boradroom",
     photoList: [
@@ -18,7 +18,7 @@ export const hall_data = [
     ],
   },
   {
-    pageName: "Classroom",
+    name: "Classroom",
     imageLink: "/images/variants/classroom/main_photo.JPG",
     headerText: "Фото розстановки залу classroom",
     photoList: [
@@ -40,7 +40,7 @@ export const hall_data = [
     ],
   },
   {
-    pageName: "U_shape",
+    name: "U_shape",
     imageLink: "/images/variants/u_shape/main_photo.JPG",
     headerText: "Фото розстановки залу U-Shape",
     photoList: [
@@ -56,7 +56,7 @@ export const hall_data = [
     ],
   },
   {
-    pageName: "Banquet",
+    name: "Banquet",
     imageLink: "/images/variants/banquet/main_photo.JPG",
     headerText: "Фото бенкетного залу",
     photoList: [
@@ -70,7 +70,7 @@ export const hall_data = [
     ],
   },
   {
-    pageName: "Reception",
+    name: "Reception",
     imageLink: "/images/variants/reception/main_photo.JPG",
     headerText: "Фото reception",
     photoList: [

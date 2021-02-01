@@ -22,7 +22,7 @@ export default function Layout({ children, head }) {
               <Link href="/" passHref>
                 <Nav.Link>Головна</Nav.Link>
               </Link>
-              <Link href="/Views" passHref>
+              <Link href="/Version" passHref>
                 <Nav.Link>Варіанти розстановки</Nav.Link>
               </Link>
             </Nav>
