@@ -1,12 +1,14 @@
 .photo_links {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .links_item {
-  width: 30%;
-  max-width: 250px;
-  height: 200px;
+  display: block;
+  overflow: hidden;
+  width: 49%;
+  height: 50vh;
   margin: 5px;
 }

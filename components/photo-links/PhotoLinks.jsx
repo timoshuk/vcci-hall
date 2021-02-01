@@ -4,6 +4,8 @@ import styles from "./PhotoLinks.module.css";
 
 const PhotoLinks = ({ data }) => {
   let items = data.map((item, id) => {
+    const lastChildWith = data.length % 2 != 0 ? "full_width" : "";
+
     return (
       <div key={`${data.name}${id}`} className={styles.links_item}>
         <Link href={`/Page`}>

@@ -7,7 +7,7 @@ import styles from "./layout.module.css";
 
 export default function Layout({ children, head }) {
   return (
-    <div>
+    <div className={styles.page}>
       <Head>
         <title>{head}</title>
         <link rel="icon" href="/images/cropped-BoockmaskLogo-32x32.png" />
@@ -31,7 +31,7 @@ export default function Layout({ children, head }) {
       </Container>
 
       <Container fluid>
-        <main>{children}</main>
+        <main className={styles.main_content}>{children}</main>
       </Container>
     </div>
   );
