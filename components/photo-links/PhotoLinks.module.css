@@ -1,0 +1,12 @@
+.photo_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.links_item {
+  width: 30%;
+  max-width: 250px;
+  height: 200px;
+  margin: 5px;
+}
