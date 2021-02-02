@@ -2,7 +2,7 @@ export const hall_data = [
   {
     name: "Boardroom",
     imageLink: "/images/variants/boardroom/main_photo.JPG",
-    headerText: "Фото розстановки залу boradroom",
+    headerText: "Boradroom",
     photoList: [
       "/images/variants/boardroom/main_photo.JPG",
       "/images/variants/boardroom/1.JPG",

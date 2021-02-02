@@ -1,5 +1,4 @@
 import Layout from "../components/layout";
-import Image from "next/image";
 import Button from "react-bootstrap/Button";
 
 import styles from "../styles/Home.module.css";
@@ -17,10 +16,10 @@ export default function Home() {
           тел: 0509528247
         </Button>
       </div>
-      <Image
+      <img className={styles.img_bg}
         src="/images/main_bg.jpg"
         alt="Picture of the author"
-        layout="fill"
+
       />
     </Layout>
   );

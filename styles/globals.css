@@ -374,6 +374,10 @@ body {
   overflow-x: hidden;
 }
 
+html body {
+  background: #000;
+}
+
 /* Castom stiles */
 .navbar-collapse {
   margin-top: 20px;
