@@ -1,11 +1,14 @@
-import Layout from "../components/layout";
+import Head from "next/head";
 import Button from "react-bootstrap/Button";
 
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <Layout head="Оренда конференц-залу">
+    <>
+      <Head>
+        <title>Оренда конференц-залу</title>
+      </Head>
       <div className={styles.main_content}>
         <h1>Орендувати</h1>
         <h3>конференц-зал у м.Луцьк</h3>
@@ -16,11 +19,11 @@ export default function Home() {
           тел: 0509528247
         </Button>
       </div>
-      <img className={styles.img_bg}
+      <img
+        className={styles.img_bg}
         src="/images/main_bg.jpg"
         alt="Picture of the author"
-
       />
-    </Layout>
+    </>
   );
 }

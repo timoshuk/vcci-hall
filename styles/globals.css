@@ -394,3 +394,9 @@ html body {
   font-size: 1.2em;
   padding: 15px 30px;
 }
+
+/* Sliders styles */
+
+.slider-title {
+  position: absolute;
+}

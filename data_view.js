@@ -20,7 +20,7 @@ export const hall_data = [
   {
     name: "Classroom",
     imageLink: "/images/variants/classroom/main_photo.JPG",
-    headerText: "Фото розстановки залу classroom",
+    headerText: "Classroom",
     photoList: [
       "/images/variants/classroom/main_photo.JPG",
       "/images/variants/classroom/1.JPG",
@@ -42,7 +42,7 @@ export const hall_data = [
   {
     name: "U_shape",
     imageLink: "/images/variants/u_shape/main_photo.JPG",
-    headerText: "Фото розстановки залу U-Shape",
+    headerText: "U-Shape",
     photoList: [
       "/images/variants/u_shape/main_photo.JPG",
       "/images/variants/u_shape/1.JPG",
@@ -58,7 +58,7 @@ export const hall_data = [
   {
     name: "Banquet",
     imageLink: "/images/variants/banquet/main_photo.JPG",
-    headerText: "Фото бенкетного залу",
+    headerText: "Зал для бенкету",
     photoList: [
       "/images/variants/banquet/main_photo.JPG",
       "/images/variants/banquet/1.JPG",
@@ -72,7 +72,7 @@ export const hall_data = [
   {
     name: "Reception",
     imageLink: "/images/variants/reception/main_photo.JPG",
-    headerText: "Фото reception",
+    headerText: "Reception",
     photoList: [
       "/images/variants/reception/main_photo.JPG",
       "/images/variants/reception/1.JPG",

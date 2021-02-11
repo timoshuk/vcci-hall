@@ -1,19 +1,17 @@
 import Head from "next/head";
 import Link from "next/link";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Navbar, Nav } from "react-bootstrap";
-import styles from "./layout.module.css";
+import styles from "../styles/Layout.module.css";
 
-export default function Layout({ children, head }) {
+export default function Layout({ children }) {
   return (
     <div className={styles.page}>
       <Head>
-        <title>{head}</title>
         <link rel="icon" href="/images/cropped-BoockmaskLogo-32x32.png" />
         <meta name="description" content="Оренда конференц-залу у Луцьку" />
       </Head>
-
       <Container>
         <Navbar variant="dark" expand="md" className={styles.nav}>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,7 +27,6 @@ export default function Layout({ children, head }) {
           </Navbar.Collapse>
         </Navbar>
       </Container>
-
       <Container fluid>
         <main className={styles.main_content}>{children}</main>
       </Container>

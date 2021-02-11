@@ -5,6 +5,14 @@
   margin-right: auto;
 }
 
+.main_content {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
 .nav {
   position: absolute;
   left: 0;
@@ -18,12 +26,4 @@
     top: 0;
     transform: translateX(-50%);
   }
-}
-
-.main_content {
-  display: block;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
 }
