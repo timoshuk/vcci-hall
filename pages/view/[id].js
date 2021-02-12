@@ -1,16 +1,40 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
-import { hall_data } from "../../data_view";
+import { server } from "../../config";
 
-function Page() {
-  const router = useRouter();
-  const { id } = router.query;
+export async function getStaticProps(context) {
+  const res = await fetch(
+    `http://localhost:3000/api/pages/${context.params.id}`
+  );
+  const pageData = await res.json();
 
-  const [{ name, headerText, photoList }] = hall_data.filter((item) => {
-    return item.name === id;
-  });
+  return {
+    props: {
+      pageData,
+    }, // will be passed to the page component as props
+  };
+}
+
+export async function getStaticPaths() {
+  const res = await fetch(`http://localhost:3000/api/pages`);
+  const data = await res.json();
+
+  const ids = data.map((data) => data.name);
+
+  const paths = ids.map((id) => ({ params: { id: id.toString() } }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+function Page({ pageData }) {
+  // const router = useRouter();
+  // const { id } = router.query;
+
+  const { name, headerText, photoList } = pageData;
 
   return (
     <>
