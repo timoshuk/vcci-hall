@@ -4,9 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { server } from "../../config";
 
 export async function getStaticProps(context) {
-  const res = await fetch(
-    `http://localhost:3000/api/pages/${context.params.id}`
-  );
+  const res = await fetch(`${server}/api/pages/${context.params.id}`);
   const pageData = await res.json();
 
   return {
@@ -17,7 +15,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch(`http://localhost:3000/api/pages`);
+  const res = await fetch(`${server}/api/pages`);
   const data = await res.json();
 
   const ids = data.map((data) => data.name);
