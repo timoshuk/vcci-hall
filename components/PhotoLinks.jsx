@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import classnames from "classnames";
 import styles from "../styles/PhotoLinks.module.css";
 
@@ -17,7 +16,7 @@ const PhotoLinks = ({ data }) => {
       >
         <div className={classnames(styles.links_item, last && lastChildWith)}>
           <h2 className={styles.links_item_title}>{item.headerText}</h2>
-          <Image src={item.imageLink} alt={item.name} layout="fill" />
+          <img src={item.imageLink} alt={item.name} />
         </div>
       </Link>
     );

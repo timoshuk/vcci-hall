@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
 import { hall_data } from "../../data/data_view";
 
@@ -41,11 +40,10 @@ function Page({ pageData }) {
         {photoList.map((listItem) => {
           return (
             <Carousel.Item className="item-carousel-slide" key={listItem}>
-              <Image
-                className="d-block w-100 h-100"
+              <img
+                className="d-block w-100"
                 src={listItem}
                 alt="Фото конференц-залу"
-                layout="fill"
               />
             </Carousel.Item>
           );
