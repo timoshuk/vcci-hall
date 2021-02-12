@@ -4,7 +4,7 @@ import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
 import { hall_data } from "../../data/data_view";
 
-function Page() {
+export default function Page() {
   const router = useRouter();
   const { id } = router.query;
 
@@ -37,5 +37,3 @@ function Page() {
     </>
   );
 }
-
-export default Page;
