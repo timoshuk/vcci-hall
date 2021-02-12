@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       <Image
         className={styles.img_bg}
-        src="/images/main_bg.jpg"
+        src="/images/main_bg.JPG"
         alt="Picture of the author"
         layout="fill"
       />
