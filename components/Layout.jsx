@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { Container, Navbar, Nav } from "react-bootstrap";
@@ -6,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Layout.module.css";
 
 export default function Layout({ children }) {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <div className={styles.page}>
       <Head>
@@ -13,7 +16,12 @@ export default function Layout({ children }) {
         <meta name="description" content="Оренда конференц-залу у Луцьку" />
       </Head>
       <Container>
-        <Navbar variant="dark" expand="md" className={styles.nav}>
+        <Navbar
+          variant="dark"
+          expand="md"
+          collapseOnSelect={true}
+          className={styles.nav}
+        >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
@@ -30,7 +38,7 @@ export default function Layout({ children }) {
           </Navbar.Collapse>
         </Navbar>
       </Container>
-      <Container fluid>
+      <Container className="p-0" fluid>
         <main className={styles.main_content}>{children}</main>
       </Container>
     </div>
