@@ -369,6 +369,10 @@ template {
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -398,5 +402,20 @@ html body {
 /* Sliders styles */
 
 .slider-title {
+  z-index: 90;
   position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.item-carousel-slide {
+  min-height: 100vh;
+}
+
+.item-carousel-slide img {
+  object-fit: cover;
 }

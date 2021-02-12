@@ -13,6 +13,7 @@
   display: block;
   overflow: hidden;
   width: 49%;
+  min-height: 50vh;
   height: auto;
   margin: 5px;
   flex-grow: 1;
@@ -24,6 +25,7 @@
 .links_item::before {
   display: block;
   position: absolute;
+  z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
@@ -40,6 +42,7 @@
 }
 
 .links_item_title {
+  z-index: 100;
   position: absolute;
   font-size: 1.8rem + 5vw;
   left: 50%;
@@ -56,4 +59,5 @@
 
 .full_width {
   min-width: 100%;
+  height: 90vh;
 }
