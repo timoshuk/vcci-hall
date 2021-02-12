@@ -1,24 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
-import { server } from "../../config";
+import { hall_data } from "../../data/data_view";
 
-export async function getStaticProps(context) {
-  const res = await fetch(`${server}/api/pages/${context.params.id}`);
-  const pageData = await res.json();
-
+export async function getStaticProps({ params }) {
+  const data = hall_data.filter((item) => item.name.toString() === params.id);
   return {
     props: {
-      pageData,
-    }, // will be passed to the page component as props
+      pageData: data[0],
+    },
   };
 }
 
 export async function getStaticPaths() {
-  const res = await fetch(`${server}/api/pages`);
-  const data = await res.json();
-
-  const ids = data.map((data) => data.name);
+  const ids = hall_data.map((data) => data.name);
 
   const paths = ids.map((id) => ({ params: { id: id.toString() } }));
 
