@@ -12,8 +12,14 @@ export default function Layout({ children }) {
   return (
     <div className={styles.page}>
       <Head>
+        <meta charset="UTF-8" />
         <link rel="icon" href="/images/cropped-BoockmaskLogo-32x32.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Оренда конференц-залу у Луцьку" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#000" />
+        <meta name="msapplication-navbutton-color" content="#000" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
       </Head>
       <Container>
         <Navbar
