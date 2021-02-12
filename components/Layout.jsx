@@ -23,6 +23,9 @@ export default function Layout({ children }) {
               <Link href="/Version" passHref>
                 <Nav.Link>Варіанти розстановки</Nav.Link>
               </Link>
+              <Link href="/Presentation" passHref>
+                <Nav.Link>Презентація</Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

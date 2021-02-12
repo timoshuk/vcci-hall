@@ -12,7 +12,17 @@ export default function Home() {
       </Head>
       <div className={styles.main_content}>
         <h1>Орендувати</h1>
-        <h3>конференц-зал у м.Луцьк</h3>
+        <h3>
+          конференц-зал
+          <br />
+          <a
+            className="text-white"
+            href="https://goo.gl/maps/F8cKPTDFCyvvgsvc8"
+            target="_blank"
+          >
+            м.Луцьк, Київський майдан, 7
+          </a>
+        </h3>
         <Button
           href="tel:+380506665008"
           className={`my-5 py-3 px-4 ${styles.btn_tel}`}
